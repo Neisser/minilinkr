@@ -1,7 +1,5 @@
 'use strict';
 
-module.exports = url;
-
-function url() {
+export function url() {
   return 'Hello from url';
 }
