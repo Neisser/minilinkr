@@ -1,4 +1,4 @@
-# MiniLinkr - URL Shortener Rust Monorepo
+# MiniLinkr - URL Shortener service Rust Monorepo
 
 Welcome to MiniLinkr, a URL shortening project monorepo implemented in Rust. This repository hosts a comprehensive URL shortening service that allows you to generate and manage short links for long URLs.
 
