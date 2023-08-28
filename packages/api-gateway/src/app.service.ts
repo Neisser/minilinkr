@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
+import { getUrlMessage } from '@minilinkr/urls';
 
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    console.log('hello')
+    return getUrlMessage();
   }
 }
