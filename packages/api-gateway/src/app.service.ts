@@ -1,10 +1,15 @@
 import { Injectable } from '@nestjs/common';
-import { getUrlMessage } from '@minilinkr/url';
+import { getUrlMessage, generateHash } from '@minilinkr/url';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    console.log('hello');
-    return getUrlMessage();
+  async getLongUrl(hash): Promise<string> {
+    const longUrl = getUrlMessage(hash);
+    return longUrl;
+  }
+
+  async shortUrl(id: number): Promise<string> {
+    const hash = generateHash(id);
+    return hash;
   }
 }
